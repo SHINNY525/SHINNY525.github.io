@@ -1,0 +1,25 @@
+body {
+    background: lightcyan;;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h2{
+    color: blue;
+}
+
+h3{
+    color: red;
+}
+
+p{
+    color: green;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 50px;
+    border: 10px solid black;
+    background-color: red;
+}
