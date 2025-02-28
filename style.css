@@ -17,6 +17,12 @@ header{
     background: #99E4FF;
 }
 
+.allheader{
+    max-width: 1220px; 
+    margin: 0 auto;
+    width: 100%;
+}
+
 .name{
     font-weight: bold;
 }
@@ -24,7 +30,6 @@ header{
 .name-header{
     font-size: 35px;
     border-bottom: 2px solid black;
-    max-width: 1140px; 
     margin: 0 100px 0 100px; 
 }
 
@@ -75,8 +80,8 @@ nav {
 .four-icons{
     display: flex;
     max-width: 1100px;
-    margin: 0 100px 0 100px;
-    padding: 50px 30px 50px 30px;
+    margin: 0 auto;
+    padding: 50px 30px 30px 50px;
     display: flex;
     gap: 10em;
     justify-content: center;
@@ -85,8 +90,11 @@ nav {
 }
 
 h2{
-    margin: 30px 100px 30px 100px;
+    margin: 30px auto;
+    padding-left: 100px;
+    max-width: 1140px;
     text-decoration: underline;
+    width: 100%;
 }
 
 .intro2{
