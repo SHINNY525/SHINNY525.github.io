@@ -1,37 +1,37 @@
 body {
     background: #e4e4e4;
     color: black;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
 
 *, html {
-    margin:0;
-    padding:0;  
+    margin: 0;
+    padding: 0;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-header{
+header {
     background: #99E4FF;
 }
 
-.name{
+.name {
     font-weight: bold;
 }
 
-.name-header{
+.name-header {
     font-size: 35px;
     border-bottom: 2px solid black;
-    max-width: 1140px; 
-    margin: 0 100px 0 100px; 
+    max-width: 1140px;
+    margin: 0 auto; /* Center the header */
 }
 
 nav {
     padding: 2px;
     position: sticky;
-    top: 0px;
+    top: 0;
 }
 
 .navigation {
@@ -53,77 +53,76 @@ nav {
     text-decoration: underline;
 }
 
-.hero{
+.hero {
     display: flex;
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1100px; /* Limit the max width */
+    margin: 0 auto; /* Center the hero section */
     padding: 30px;
-    display: flex;
     gap: 4em;
     justify-content: center;
     align-items: center;
 }
 
-.hi-im-shion{
+.hi-im-shion {
     font-size: 100px;
 }
 
-.bio{
+.bio {
     font-size: 17px;
 }
 
-.four-icons{
+.four-icons {
     display: flex;
-    max-width: 1100px;
-    margin: 0 100px 0 100px;
-    padding: 50px 30px 50px 30px;
-    display: flex;
+    max-width: 1100px; /* Limit the max width */
+    margin: 0 auto; /* Center the icons */
+    padding: 50px 30px;
     gap: 10em;
     justify-content: center;
     align-items: center;
     background: #D9D9D9;
 }
 
-h2{
-    margin: 30px 100px 30px 100px;
+h2 {
+    margin: 30px auto;
     text-decoration: underline;
+    max-width: 1140px; /* Limit the width */
+    padding: 0 20px; /* Add padding to the sides */
 }
 
-.intro2{
+.intro2 {
     display: flex;
     max-width: 875px;
     line-height: 1.75;
     margin: 0 auto;
-    display: flex;
     gap: 7em;
     justify-content: center;
     align-items: center;
 }
 
-.end{
+.end {
     background-color: #99E4FF;
     position: relative;
 }
 
-.emailicon{
+.emailicon {
     display: flex;
     gap: 0.5em;
     justify-content: left;
     align-items: center;
-    margin: 30px 100px 0px 100px;
-    padding: 0 0 10px 0;
+    margin: 30px auto 0;
+    padding: 0 0 10px;
 }
 
-.contacticons{
+.contacticons {
     display: flex;
     gap: 1.5em;
     justify-content: right;
     align-items: center;
-    margin: 30px 100px 0px 100px;
-    padding: 30px 0px 0px 0px;
+    margin: 30px auto 0;
+    padding: 30px 0 0;
 }
 
-.policies{
+.policies {
     display: flex;
     gap: 1.5em;
     justify-content: right;
@@ -132,11 +131,28 @@ h2{
     right: 100px;
 }
 
-.twocolors{
+.twocolors {
     color: black;
     text-decoration: none;
 }
 
 .twocolors:hover {
     text-decoration: underline;
+}
+
+/* Additional improvements for very large screens */
+@media (min-width: 1200px) {
+    .hero, .four-icons, .intro2, .name-header {
+        max-width: 1200px;
+        margin: 0 auto; /* Centering */
+    }
+
+    h2 {
+        padding: 0 30px; /* Add more padding for larger screens */
+    }
+
+    .contacticons, .emailicon {
+        margin: 30px auto;
+        justify-content: center;
+    }
 }
