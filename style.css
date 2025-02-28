@@ -93,6 +93,7 @@ nav {
 h2{
     margin: 30px 100px 30px 100px;
     text-decoration: underline;
+    max-width: 875px;
 }
 
 .intro2{
